@@ -4,6 +4,7 @@ import Header from './(components)/Header/Header'
 import Enjoy from './(components)/Enjoy/Enjoy'
 import About from './(components)/About/About'
 import Footer from './(components)/Footer/Footer'
+import Partners from './(components)/Partners/Partners'
 
 function page() {
   return (
@@ -24,6 +25,9 @@ function page() {
         <p className="sm:ml-[30px] text-center">
           What are we doing one of the biggest market makers in the market
         </p>
+        <div className="partner-div h-80 mb-[248px] mt-[100px]" >
+        <Partners/>
+        </div>
 <Footer/>
     </div>
     </div>

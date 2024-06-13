@@ -19,7 +19,6 @@ function Enjoy() {
           <Image src={Images.mercury} width={600} height={600} />
         </div>
       </div>
-      //
       <div className="grid  sm:grid-cols-2">
         <div className="sm:mt-[50px] lg:mt-[-100px]">
           <Image src={Images.mercury} width={600} height={600} />

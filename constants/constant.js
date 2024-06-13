@@ -11,5 +11,13 @@ export const Images = {
     twitter: require("../public/assets/twitter.svg"),
     google: require("../public/assets/google.svg"),
     youtube: require("../public/assets/youtube.svg"),
+    question: require("../public/assets/question.svg"),
+    first: require("../public/assets/1st.svg"),
+    second: require("../public/assets/second.svg"),
+    third: require("../public/assets/third.svg"),
+    purchaseGlobe: require("../public/assets/purchaseglobe.svg"),
+    dolphin: require("../public/assets/dolphin.svg"),
+    tick: require("../public/assets/tick.svg"),
+    mainQuestionMark: require("../public/assets/mainQuestionMark.svg"),
   };
   
