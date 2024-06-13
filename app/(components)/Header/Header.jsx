@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Images } from "@/constants/constant";
+
 function Header() {
   return (
     <div className=" grid sm:grid-cols-2 mt-[100px] sm:mt-[226px] overflow-x-hidden">
@@ -19,12 +20,15 @@ function Header() {
         </div>
       </div>
       <div className="relative flex justify-center items-center w-[350px] h-[350px] mx-auto">
-      <Image src={Images.innerGlobe} className="w-[260px] h-[260px] inner-globe" />
-      <Image
-        src={Images.outerGlobe}
-        className="w-[350px] h-[350px] absolute outer-globe"
-      />
-    </div>
+        <Image
+          src={Images.innerGlobe}
+          className="w-[260px] h-[260px] inner-globe"
+        />
+        <Image
+          src={Images.outerGlobe}
+          className="w-[350px] h-[350px] absolute outer-globe"
+        />
+      </div>
     </div>
   );
 }

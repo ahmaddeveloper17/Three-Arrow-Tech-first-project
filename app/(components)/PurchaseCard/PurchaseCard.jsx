@@ -1,4 +1,3 @@
-
 "use client";
 import { Images } from "@/constants/constant";
 import Image from "next/image";
@@ -33,7 +32,9 @@ function PurchaseCard() {
             className="transition duration-500 ease-in-out hover:bg-black hover:text-Accent active:bg-Accent2 active:text-Accent bg-Accent2 border-Accent2 w-[100px] md:w-[144px] h-[45px] mt-[20px] py-3 text-center rounded-md cursor-pointer"
             onClick={handlePurchaseClick}
           >
-            <h2 className="w-[100px] md:w-[143px] h-[28px] font-semibold">Purchase</h2>
+            <h2 className="w-[100px] md:w-[143px] h-[28px] font-semibold">
+              Purchase
+            </h2>
           </div>
         </div>
         <div>

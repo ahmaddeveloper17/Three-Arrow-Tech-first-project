@@ -1,16 +1,3 @@
-// import Image from 'next/image'
-// import React from 'react'
-
-// function QuestionAnswer() {
-//   return (
-//     <div className='w-[1013px] flex h-[172px] justify-between mt-6 border border-Accent2 md:ml-16 rounded-2xl '>
-//         <h1 className='text-Accent pl-[24px] pt-[23px] font-clash-display text-custom-18 font-medium leading-custom-28'>What is Web3?</h1>
-//     <h1 className='text-Accent2 pt-[23px] pr-8'>+</h1>
-//     </div>
-//   )
-// }
-
-// export default QuestionAnswer
 
 "use client";
 import React, { useState } from "react";

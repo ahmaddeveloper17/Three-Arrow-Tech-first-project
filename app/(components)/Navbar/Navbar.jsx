@@ -1,5 +1,6 @@
 const { default: Image } = require("next/image");
 import { Images } from "@/constants/constant";
+import Link from "next/link";
 import React from "react";
 
 function Navbar() {
@@ -50,34 +51,34 @@ function Navbar() {
               </button>
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <a href="#">
+              <Link href="/">
                 <Image
                   src={Images.mainIcon}
                   className="w-[135px] h-[84px]   "
                 />
-              </a>
+              </Link>
               <div class="hidden sm:ml-0  my-2 sm:hidden md:block">
                 <div class="flex space-x-4">
-                  <a href="#">
+                  <Link href="/">
                     <h2 className="text-Accent2 xl:ml-32 font-semibold md:mt-8  transition duration-500 ease-in-out hover:text-Accent ">
                       AlgoX capitaL
                     </h2>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link href="/">
                     <h2 className="text-Accent font-semibold md:mt-8  transition duration-500 ease-in-out hover:text-Accent2 ">
                       Exchange
                     </h2>
-                  </a>{" "}
-                  <a href="#">
+                  </Link>{" "}
+                  <Link href="/purchase">
                     <h2 className="text-Accent font-semibold md:mt-8  transition duration-500 ease-in-out hover:text-Accent2 ">
                       Trading program
                     </h2>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link href="/faqs">
                     <h2 className="text-Accent font-semibold md:mt-8  transition duration-500 ease-in-out hover:text-Accent2 ">
                       More
                     </h2>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -115,31 +116,31 @@ function Navbar() {
 
         <div class="sm:hidden" id="mobile-menu">
           <div class="space-y-2 px-2 pb-3 pt-2">
-            <a
-              href="#"
+            <Link
+              href="/"
               class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
               aria-current="page"
             >
               AlgoX capitaL
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >
               Exchange
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/purchase"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >
               Trading program
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/faqs"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >
               More
-            </a>
+            </Link>
 
             <div className="flex border my-4 border-Accent2 py-2 w-[144px] h-[45px] gap-2 justify-center rounded-md transition duration-500 ease-in-out hover:bg-Accent2 hover:text-black active:bg-Acctext-Accent2 active:text-black">
               <Image

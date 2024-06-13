@@ -1,18 +1,33 @@
-import React from 'react'
-import PartnerCard from '../PartnerCard/PartnerCard'
-import { Images } from '@/constants/constant'
+
+import React from "react";
+import PartnerCard from "../PartnerCard/PartnerCard";
+import { Images } from "@/constants/constant";
 
 function Partners() {
   return (
-    <div className=' grid grid-cols-4 md:grid-cols-6  ' >
-        <PartnerCard name="Bybit" img={Images.first} />
-        <PartnerCard name="Nexo"  img={Images.second}/>
-        <PartnerCard name="Crypto" img={Images.third}/>
-        <PartnerCard name="Bybit" img={Images.first}/>
-        <PartnerCard name="Nexo" img={Images.second}/>
-        <PartnerCard name="Crypto" img={Images.third}/>
+    <div className="scroll-container">
+      <div className="scroll-content">
+        <div className="partner-card">
+          <PartnerCard name="Bybit" img={Images.first} />
+        </div>
+        <div className="partner-card">
+          <PartnerCard name="Nexo" img={Images.second} />
+        </div>
+        <div className="partner-card">
+          <PartnerCard name="Crypto" img={Images.third} />
+        </div>
+        <div className="partner-card">
+          <PartnerCard name="Bybit" img={Images.first} />
+        </div>
+        <div className="partner-card">
+          <PartnerCard name="Nexo" img={Images.second} />
+        </div>
+        <div className="partner-card">
+          <PartnerCard name="Crypto" img={Images.third} />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Partners
+export default Partners;

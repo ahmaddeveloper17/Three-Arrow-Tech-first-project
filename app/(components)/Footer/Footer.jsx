@@ -1,6 +1,4 @@
-
-
-import React from "react"; 
+import React from "react";
 import Image from "next/image";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import { Images } from "@/constants/constant";
@@ -8,16 +6,15 @@ import { Images } from "@/constants/constant";
 export default function Footer() {
   return (
     <div className="bg-[#404040]">
-         <div className="text-center mx-auto px-4 py-4 sm:px-6 lg:px-8 mb-4">
-              <Image src={Images.mainIcon} alt="logo" width={120} height={120} />
-            </div>
+      <div className="text-center mx-auto px-4 py-4 sm:px-6 lg:px-8 mb-4">
+        <Image src={Images.mainIcon} alt="logo" width={120} height={120} />
+      </div>
       <div className="container mx-auto px-4 py-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 text-white">
           <div className="flex flex-col gap-4">
-           
             <p className="text-center">
-              AlgoX is where you get access to the best new tokens before they list on other
-              exchanges.
+              AlgoX is where you get access to the best new tokens before they
+              list on other exchanges.
             </p>
             <div className="flex justify-center gap-4 mt-4">
               <SocialMedia
@@ -43,14 +40,26 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col">
-            <p className="font-semibold text-Accent transition duration-500 ease-in-out hover:text-Accent2">AlgoX Capital</p>
-            <p className="text-Accent transition duration-500 ease-in-out hover:text-Accent2">Exchange</p>
-            <p className="text-Accent transition duration-500 ease-in-out hover:text-Accent2" >FAQs</p>
+            <p className="font-semibold text-Accent transition duration-500 ease-in-out hover:text-Accent2">
+              AlgoX Capital
+            </p>
+            <p className="text-Accent transition duration-500 ease-in-out hover:text-Accent2">
+              Exchange
+            </p>
+            <p className="text-Accent transition duration-500 ease-in-out hover:text-Accent2">
+              FAQs
+            </p>
           </div>
           <div className="flex flex-col">
-            <p className="font-semibold text-Accent transition duration-500 ease-in-out hover:text-Accent2">More</p>
-            <p className="text-Accent transition duration-500 ease-in-out hover:text-Accent2">Algorithmic trading</p>
-            <p className="text-Accent transition duration-500 ease-in-out hover:text-Accent2">Market Making</p>
+            <p className="font-semibold text-Accent transition duration-500 ease-in-out hover:text-Accent2">
+              More
+            </p>
+            <p className="text-Accent transition duration-500 ease-in-out hover:text-Accent2">
+              Algorithmic trading
+            </p>
+            <p className="text-Accent transition duration-500 ease-in-out hover:text-Accent2">
+              Market Making
+            </p>
           </div>
           <div className="flex flex-col">
             <h1 className="text-2xl font-semibold">Newsletter</h1>
@@ -68,7 +77,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="text-center text-gray-400 mt-8">© All rights reserved by Your Company</p>
+        <p className="text-center text-gray-400 mt-8">
+          © All rights reserved by Your Company
+        </p>
       </div>
     </div>
   );
