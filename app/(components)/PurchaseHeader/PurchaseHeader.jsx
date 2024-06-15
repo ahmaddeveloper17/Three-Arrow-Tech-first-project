@@ -1,7 +1,8 @@
+import { Images } from "@/constants/constant";
 import Image from "next/image";
 import React from "react";
 
-function PurchaseHeader(props) {
+function PurchaseHeader() {
   return (
     <div className=" grid sm:grid-cols-2 mt-[100px] sm:mt-[206px]">
       <div className="sm:ml-10 md:ml-40">
@@ -9,8 +10,15 @@ function PurchaseHeader(props) {
           Shop and Subscription
         </h1>
       </div>
-      <div className=" justify-center items-center sm:mt-[-70px] w-[350px] h-[350px] mx-auto">
-        <Image src={props.img} className="w-[260px] h-[260px] inner-globe" />
+      <div className="relative flex justify-center items-center w-[350px] h-[350px] mx-auto">
+        <Image
+          src={Images.innerGlobe}
+          className="w-[260px] h-[260px] inner-globe"
+        />
+        <Image
+          src={Images.outerGlobe}
+          className="w-[350px] h-[350px] mb-3 absolute outer-globe"
+        />
       </div>
     </div>
   );

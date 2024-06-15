@@ -10,7 +10,7 @@ function page() {
     <div>
       <div className="background-div">
         <Navbar />
-        <PurchaseHeader img={Images.purchaseGlobe} />
+        <PurchaseHeader/>
       </div>
       <div class="text-opacity-75">
         <p class="font-transducer-test mt-[73px] mb-[73px] text-center text-4xl font-extrabold leading-tight capitalize">

@@ -7,9 +7,9 @@ function PartnerCard(props) {
     <div>
       <div className="relative">
         <div className="relative p-8">
-          <Image src={props.img} width={160} height={160} />
+          <Image src={props.img} width={140} height={140} />
           <div className="absolute top-0 left-0 p-4">
-            <Image src={Images.question} width={180} height={180} />
+            <Image src={Images.question} width={160} height={160} />
           </div>
         </div>
       </div>

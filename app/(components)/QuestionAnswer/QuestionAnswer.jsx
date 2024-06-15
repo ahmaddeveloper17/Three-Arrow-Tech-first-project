@@ -11,18 +11,17 @@ function QuestionAnswer(props) {
 
   return (
     <div
-      className={` xl:w-[1013px] flex flex-col ${
-        isExpanded ? "h-auto" : "h-[72px]"
-      } justify-between mt-6 border border-Accent2 mx-4 sm:mx-10 mx:ml-16 rounded-2xl`}
+      className={`xl:w-[1013px]  2xl:mx-[250px] 3xl:mx-[350px] 4xl:mx-[490px] mx-auto flex flex-col ${
+        isExpanded ? "h-auto" : "h-[98px]"
+      } justify-between mt-6 border border-Accent2 mx-4 sm:mx-16 md:mx-24 lg:mx-32  rounded-2xl cursor-pointer`}
+      style={{ maxWidth: "calc(100% - 40px)" }}
+      onClick={toggleExpand}
     >
       <div className="flex justify-between">
         <h1 className="text-Accent pl-[24px] pt-[23px] font-clash-display text-custom-18 font-medium leading-custom-28">
           {props.question}
         </h1>
-        <h1
-          className="text-Accent2 pt-[23px] pr-8 cursor-pointer"
-          onClick={toggleExpand}
-        >
+        <h1 className="text-Accent2 pt-[23px] pr-8">
           {isExpanded ? "-" : "+"}
         </h1>
       </div>

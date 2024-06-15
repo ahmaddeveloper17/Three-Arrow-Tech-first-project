@@ -3,7 +3,7 @@ import { Images } from "@/constants/constant";
 import Image from "next/image";
 import React from "react";
 
-function Modal({ show, onClose, position }) {
+function Modal({ show, position }) {
   if (!show) {
     return null;
   }
@@ -15,7 +15,7 @@ function Modal({ show, onClose, position }) {
 
   return (
     <div
-      className={`fixed z-50 inset-0 flex items-center justify-end ${positionClass}`}
+      className={`fixed z-50  inset-0 flex items-center justify-end ${positionClass}`}
     >
       <div className="bg-black p-4 rounded-lg w-[400px] mr-4">
         <h2 className="text-Accent2 font-dm-sans text-custom-28 font-bold normal-case">
@@ -53,20 +53,6 @@ function Modal({ show, onClose, position }) {
           <p className="text-Accent ml-2 font-dm-sans text-custom-20 font-medium normal-case">
             10% binary bonus
           </p>
-        </div>
-        <div className="mt-4 flex justify-end">
-          <button
-            onClick={onClose}
-            className="bg-red-500 text-white px-4 py-2 rounded mr-2"
-          >
-            Cancel
-          </button>
-          <button
-            onClick={onClose}
-            className="bg-green-500 text-white px-4 py-2 rounded"
-          >
-            Confirm
-          </button>
         </div>
       </div>
     </div>

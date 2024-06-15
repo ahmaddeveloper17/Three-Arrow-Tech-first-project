@@ -16,7 +16,7 @@ function page() {
         <h1 className="text-customBlack text-center mt-[73px] mb-[30px] font-transducer-test text-4xl font-black leading-custom-76 capitalize">
           FAQs
         </h1>
-        <div className=" bg-[#404040] mx-8 mb-28 rounded-2xl h-[1000px] ">
+        <div className=" bg-[#404040]  mx-8 mb-28 rounded-2xl h-[1000px] ">
           <div className="h-20"></div>
           <QuestionAnswer question="What is Web3?" />
           <QuestionAnswer question="What is a Web3 trading platform?" />

@@ -22,7 +22,7 @@ function page() {
             Partners
           </span>
         </h1>
-        <p className="sm:ml-[30px] text-center">
+        <p className="sm:ml-[30px] text-center px-6">
           What are we doing one of the biggest market makers in the market
         </p>
         <div className="partner-div h-80 mb-[248px] mt-[100px]">

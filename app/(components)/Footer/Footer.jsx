@@ -66,19 +66,19 @@ export default function Footer() {
             <p className="text-gray-400">
               Keep up to date with our progress. Subscribe for e-mail updates.
             </p>
-            <div className="flex items-center mt-4">
+            <div className="flex items-center mt-4 w-4 sm:w-30">
               <input
-                className="flex-grow bg-transparent placeholder-white border-b border-gray-300 py-1 px-2"
+                className="flex-grow bg-transparent  placeholder-white border-b border-gray-300 py-1 px-2"
                 placeholder="Your email address"
               />
-              <button className="ml-2 bg-Accent2 text-white px-4 py-1 rounded-md">
+              <button className="ml-2 transition duration-500 ease-in-out hover:bg-black hover:text-Accent2 active:bg-black active:text-Accent2 bg-Accent2 border-Accent2 px-4 py-1 rounded-md">
                 Subscribe
               </button>
             </div>
           </div>
         </div>
         <p className="text-center text-gray-400 mt-8">
-          © All rights reserved by Your Company
+          © All rights reserved by Three Arrow Tech
         </p>
       </div>
     </div>
