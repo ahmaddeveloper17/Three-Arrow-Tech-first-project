@@ -1,77 +1,60 @@
-
-// import React from "react";
-// import PartnerCard from "../PartnerCard/PartnerCard";
-// import { Images } from "@/constants/constant";
-
-// function Partners() {
-//   return (
-//     <div className="scroll-container">
-//       <div className="scroll-content">
-//         <div className="partner-card">
-//           <PartnerCard name="Bybit" img={Images.first} />
-//         </div>
-//         <div className="partner-card">
-//           <PartnerCard name="Nexo" img={Images.second} />
-//         </div>
-//         <div className="partner-card">
-//           <PartnerCard name="Crypto" img={Images.third} />
-//         </div>
-//         <div className="partner-card">
-//           <PartnerCard name="Bybit" img={Images.first} />
-//         </div>
-//         <div className="partner-card">
-//           <PartnerCard name="Nexo" img={Images.second} />
-//         </div>
-//         <div className="partner-card">
-//           <PartnerCard name="Crypto" img={Images.third} />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Partners;
-
-
-"use client"
-import React, { useEffect, useRef } from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import PartnerCard from "../PartnerCard/PartnerCard";
 import { Images } from "@/constants/constant";
 
 function Partners() {
-  const scrollContentRef = useRef(null);
+  const [isInView2, setIsInView2] = useState(false);
+  const ref2 = useRef(null);
 
   useEffect(() => {
-    const scrollContent = scrollContentRef.current;
-    const firstImage = scrollContent.children[0];
-    const firstImageWidth = firstImage.clientWidth;
-    const visibleWidth = scrollContent.clientWidth;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target === ref2.current) {
+              setIsInView2(true);
+              observer.unobserve(ref2.current);
+            }
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-    // Calculate the duration based on the first image width
-    const duration = (visibleWidth + firstImageWidth) / 100; // Adjust speed factor if needed
+    if (ref2.current) observer.observe(ref2.current);
 
-    scrollContent.style.animationDuration = `${duration}s`;
+    return () => {
+      if (ref2.current) observer.unobserve(ref2.current);
+    };
   }, []);
 
   return (
     <div className="scroll-container">
-      <div className="scroll-content" ref={scrollContentRef}>
-        <div className="partner-card">
+      <div
+        ref={ref2}
+        className={
+          isInView2
+            ? " grid-cols-4 justify-between grid sm:grid-cols-6 animate-slideOut "
+            : ""
+        }
+      >
+        <div className="">
           <PartnerCard name="Bybit" img={Images.first} />
         </div>
-        <div className="partner-card">
+        <div className="">
           <PartnerCard name="Nexo" img={Images.second} />
         </div>
-        <div className="partner-card">
+        <div className="">
           <PartnerCard name="Crypto" img={Images.third} />
         </div>
-        <div className="partner-card">
+        <div className="">
           <PartnerCard name="Bybit" img={Images.first} />
         </div>
-        <div className="partner-card">
+        <div className="">
           <PartnerCard name="Nexo" img={Images.second} />
         </div>
-        <div className="partner-card">
+        <div className="">
           <PartnerCard name="Crypto" img={Images.third} />
         </div>
       </div>

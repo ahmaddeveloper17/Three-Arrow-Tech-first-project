@@ -10,6 +10,7 @@ export default function SocialMedia({ src, alt, link }) {
           <Image src={src} alt={alt} />
         </div>
       </Link>
-    </div>
-  );
+         
+    </div>
+  );
 }

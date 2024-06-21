@@ -18,7 +18,7 @@ function SettingModal({ show, onClose, position }) {
     <div
       className={`fixed z-50 inset-0 flex items-center justify-end ${positionClass}`}
     >
-      <div className="bg-Accent  p-4 rounded-lg w-[400px] mr-4">
+      <div className="bg-Accent  p-4 rounded-lg w-[400px]   mx-2  mt-4">
         <div>
           <Image
             src={Images.close}
@@ -33,11 +33,11 @@ function SettingModal({ show, onClose, position }) {
           </h1>
         </div>
         <div className="bg-[#404040] rounded-lg">
-        <SettingSmartCard text="Products" img={Images.box}/>
-        <SettingSmartCard text="Promotion" img={Images.speaker}/>
-        <SettingSmartCard text="Farms" img={Images.box}/>
-        <SettingSmartCard text="Rewards" img={Images.gift} />
-        <SettingSmartCard text="Alerts" img={Images.alert}/>        
+          <SettingSmartCard text="Products" img={Images.box} />
+          <SettingSmartCard text="Promotion" img={Images.speaker} />
+          <SettingSmartCard text="Farms" img={Images.box} />
+          <SettingSmartCard text="Rewards" img={Images.gift} />
+          <SettingSmartCard text="Alerts" img={Images.alert} />
         </div>
       </div>
     </div>

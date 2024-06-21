@@ -53,15 +53,46 @@ function Enjoy() {
           </p>
         </div>
         <div className="sm:mt-[50px] lg:mt-[-100px]">
-        <Image src={Images.coins} width={270} height={270} className="mx-28 w-52 sm:w-72 sm:ml-16 md:ml-28  lg:ml-40 "                                      />
-          <Image src={Images.sun} width={270} height={270} className="mx-28 outer-globe w-52 sm:w-72 sm:ml-16 md:ml-28  lg:ml-40 "                                      />
-          <Image src={Images.plate} width={600} height={600} className="sm:mt-[-40px]"/>        </div>
+          <Image
+            src={Images.coins}
+            width={270}
+            height={270}
+            className="mx-28 w-52 sm:w-72 sm:ml-16 md:ml-28  lg:ml-40 "
+          />
+          <Image
+            src={Images.sun}
+            width={270}
+            height={270}
+            className="mx-28 outer-globe w-52 sm:w-72 sm:ml-16 md:ml-28  lg:ml-40 "
+          />
+          <Image
+            src={Images.plate}
+            width={600}
+            height={600}
+            className="sm:mt-[-40px]"
+          />{" "}
+        </div>
       </div>
       <div className="grid sm:grid-cols-2">
         <div className="sm:mt-[50px] lg:mt-[-40px] ">
-          <Image src={Images.coins} width={270} height={270} className="mx-28 w-52 sm:w-72 sm:ml-16 md:ml-28  lg:ml-40 "                                      />
-          <Image src={Images.sun} width={270} height={270} className="mx-28 outer-globe w-52 sm:w-72 sm:ml-16 md:ml-28 lg:ml-40 "                                      />
-          <Image src={Images.plate} width={600} height={600} className="sm:mt-[-40px]"/>
+          <Image
+            src={Images.coins}
+            width={270}
+            height={270}
+            className="mx-28 w-52 sm:w-72 sm:ml-16 md:ml-28  lg:ml-40 "
+          />
+          <Image
+            src={Images.sun}
+            width={270}
+            height={270}
+            className="mx-28 outer-globe w-52 sm:w-72 sm:ml-16 md:ml-28 lg:ml-40 "
+          />
+          <Image
+            src={Images.plate}
+            width={600}
+            height={600}
+            className="sm:mt-[-40px]"
+          />
         </div>
         <div ref={ref2} className={isInView2 ? "animate-slideIn" : ""}>
           <h1 className="text-center sm:text-start font-poppins sm:mt-[148px] sm:ml-[50px] lg:ml-[130px] text-[40px] sm:text-[48px] lg:text-[56px] font-bold leading-[76px] text-custom-black">

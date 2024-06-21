@@ -17,7 +17,7 @@ function Wallet({ show, onClose, position }) {
     <div
       className={`fixed z-50 inset-0 flex items-center justify-end ${positionClass}`}
     >
-      <div className="bg-Accent  p-4 rounded-lg w-[700px] mr-4">
+      <div className="bg-Accent  p-4 rounded-lg w-[700px] ml-2">
         <div>
           <Image
             src={Images.close}
@@ -28,7 +28,7 @@ function Wallet({ show, onClose, position }) {
           />
 
           <div className="grid grid-cols-2">
-            <div >
+            <div>
               <h1 className="text-black font-poppins text-center text-2xl font-semibold leading-8 mb-2">
                 {" "}
                 Connect Wallet

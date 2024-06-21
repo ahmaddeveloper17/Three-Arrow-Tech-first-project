@@ -62,38 +62,20 @@
   animation: slideInFromLeft 2s ease-out forwards;
 }
 
-
-/* Partners.css */
-@keyframes scroll {
+@keyframes slideInFromLeft {
   0% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0); /* Stop when the first image reaches the right corner */
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-.scroll-container {
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
+.animate-slideOut {
+  animation: slideInFromLeft 5s ease-out forwards;
 }
-
-.scroll-content {
-  display: inline-flex;
-  animation: scroll linear forwards; /* Use forwards to stop at the end */
-}
-
-.scroll-container:hover .scroll-content {
-  animation-play-state: paused;
-}
-
-.partner-card {
-  display: inline-block;
-  flex: none;
-}
-
 
 /* Enjoy.css */
 @keyframes slideInFromLeft {
@@ -135,6 +117,10 @@
   80% { transform: translate(2px, -2px); }
   100% { transform: translate(0px, 0px); }
 }
+
+
+
+
 
 
 
