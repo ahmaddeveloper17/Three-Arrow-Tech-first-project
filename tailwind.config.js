@@ -15,12 +15,20 @@ module.exports = {
       colors: {
         Accent: "#FAFAFA",
         Accent2: "#FFBF00",
-      }
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.8s ease-in-out',
+      },
     },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
-
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 

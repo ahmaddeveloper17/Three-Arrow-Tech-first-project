@@ -103,8 +103,7 @@ function Navbar() {
                     className="w-[25px] h-[25px] lg:ml-[16px] transition duration-300 ease-in-out hover:bg-black hover:rounded-full"
                   />
                   <Image
-                    src={Images.worldIcon}
-                    onClick={handleWalletClick}
+                  src={Images.worldIcon}
                     className="w-[25px] h-[25px] lg:ml-[16px] transition duration-300 ease-in-out hover:bg-black hover:rounded-full"
                   />
                 </div>
@@ -149,11 +148,11 @@ function Navbar() {
                   />
                   <Image
                     src={Images.worldIcon}
-                    onClick={handleWalletClick}
                     className="w-[25px] h-[25px] cursor-pointer lg:ml-[16px] transition duration-300 ease-in-out hover:bg-black hover:rounded-full"
                   />
                 </div>
-                <div className="transition cursor-pointer duration-500 ease-in-out hover:bg-black hover:text-Accent2 active:bg-black active:text-Accent2 bg-Accent2 border-Accent2 w-[144px] h-[45px] mt-[20px] py-3 ml-[23px] text-center rounded-md">
+                <div 
+                    onClick={handleWalletClick} className="transition cursor-pointer duration-500 ease-in-out hover:bg-black hover:text-Accent2 active:bg-black active:text-Accent2 bg-Accent2 border-Accent2 w-[144px] h-[45px] mt-[20px] py-3 ml-[23px] text-center rounded-md">
                   <h2 className="w-[143px] h-[28] font-semibold">
                     Connect wallet
                   </h2>
@@ -195,7 +194,7 @@ function Navbar() {
               >
                 More
               </Link>
-              <div className="transition duration-500 ease-in-out hover:bg-black hover:text-Accent2 active:bg-black active:text-Accent2 bg-Accent2 border-Accent2 w-full h-[45px] mt-[20px] py-3 text-center rounded-md">
+              <div onClick={handleWalletClick}  className="transition duration-500 ease-in-out hover:bg-black hover:text-Accent2 active:bg-black active:text-Accent2 bg-Accent2 border-Accent2 w-full h-[45px] mt-[20px] py-3 text-center rounded-md">
                 <h2 className=" text-center h-[28] font-semibold">
                   Connect wallet
                 </h2>

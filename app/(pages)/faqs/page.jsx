@@ -10,7 +10,7 @@ function page() {
     <div className="overflow-x-hidden">
       <div className="background-div">
         <Navbar />
-        <PurchaseHeader img={Images.mainQuestionMark} />
+        <PurchaseHeader imag={Images.mainQuestionMark} text="Frequent Ask Questions" />
       </div>
       <div>
         <h1 className="text-customBlack text-center mt-[73px] mb-[30px] font-transducer-test text-4xl font-black leading-custom-76 capitalize">

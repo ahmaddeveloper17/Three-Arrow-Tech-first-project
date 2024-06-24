@@ -35,27 +35,27 @@ function Partners() {
         ref={ref2}
         className={
           isInView2
-            ? " grid-cols-4 justify-between grid sm:grid-cols-6 animate-slideOut "
+            ? " grid-cols-3 justify-between grid sm:grid-cols-6 animate-slideOut "
             : ""
         }
       >
-        <div className="">
-          <PartnerCard name="Bybit" img={Images.first} />
+        <div className="my-8">
+          <PartnerCard  img={Images.first} />
         </div>
-        <div className="">
-          <PartnerCard name="Nexo" img={Images.second} />
+        <div className=" my-8">
+          <PartnerCard  img={Images.second} />
         </div>
-        <div className="">
-          <PartnerCard name="Crypto" img={Images.third} />
+        <div className=" my-8">
+          <PartnerCard  img={Images.third} />
         </div>
-        <div className="">
-          <PartnerCard name="Bybit" img={Images.first} />
+        <div className=" my-8 hidden sm:block" >
+          <PartnerCard  img={Images.first} />
         </div>
-        <div className="">
-          <PartnerCard name="Nexo" img={Images.second} />
+        <div className=" my-8 hidden sm:block">
+          <PartnerCard img={Images.second} />
         </div>
-        <div className="">
-          <PartnerCard name="Crypto" img={Images.third} />
+        <div className=" my-8 hidden sm:block">
+          <PartnerCard  img={Images.third} />
         </div>
       </div>
     </div>

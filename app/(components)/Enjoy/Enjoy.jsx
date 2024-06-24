@@ -40,7 +40,7 @@ function Enjoy() {
     <div>
       <div className="grid sm:grid-cols-2 sm:mt-[50px] lg:mt-[-100px]">
         <div ref={ref1} className={isInView1 ? "animate-slideIn" : ""}>
-          <h1 className="text-center sm:text-start font-poppins sm:ml-[50px] lg:ml-[140px] text-[40px] sm:text-[48px] lg:text-[56px] font-bold leading-[76px] text-custom-black">
+          <h1 className="text-center sm:text-start font-poppins sm:ml-[70px] lg:ml-[160px] text-[40px] sm:text-[48px] lg:text-[56px] font-bold leading-[76px] text-custom-black">
             Enjoy
           </h1>
           <p className="text-center px-6 sm:text-start sm:ml-[50px] lg:ml-[140px] font-poppins text-[12px] sm:text-[14px] lg:text-[16px] font-normal leading-[36px] text-custom-black">
@@ -52,7 +52,7 @@ function Enjoy() {
             reprehenderit ipsum illo neque magni error.
           </p>
         </div>
-        <div className="sm:mt-[50px] lg:mt-[-100px]">
+        <div className="sm:mt-[50px] lg:mt-[-100px] lg:ml-20">
           <Image
             src={Images.coins}
             width={270}
@@ -74,7 +74,7 @@ function Enjoy() {
         </div>
       </div>
       <div className="grid sm:grid-cols-2">
-        <div className="sm:mt-[50px] lg:mt-[-40px] ">
+        <div className="sm:mt-[50px] lg:mt-[-40px] lg:ml-28">
           <Image
             src={Images.coins}
             width={270}
@@ -95,7 +95,7 @@ function Enjoy() {
           />
         </div>
         <div ref={ref2} className={isInView2 ? "animate-slideIn" : ""}>
-          <h1 className="text-center sm:text-start font-poppins sm:mt-[148px] sm:ml-[50px] lg:ml-[130px] text-[40px] sm:text-[48px] lg:text-[56px] font-bold leading-[76px] text-custom-black">
+          <h1 className="text-center sm:text-start font-poppins sm:mt-[148px] sm:ml-[70px] lg:ml-[150px] text-[40px] sm:text-[48px] lg:text-[56px] font-bold leading-[76px] text-custom-black">
             Connecting
           </h1>
           <p className="text-center px-6  sm:text-start sm:ml-[50px] lg:ml-[130px] font-poppins  text-[12px] sm:text-[14px] lg:text-[16px] font-normal leading-[36px] text-custom-black">

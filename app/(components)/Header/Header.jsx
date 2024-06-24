@@ -1,10 +1,22 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Images } from "@/constants/constant";
+import Wallet from "../Wallet/Wallet";
 
 function Header() {
+  const [walletModal, setWalletModal] = useState(false);
+
+  const handleWalletClick = () => {
+    setWalletModal(true);
+  };
+  const handleCloseWalletModal = () => {
+    setWalletModal(false);
+  };
+
   return (
-    <div className=" grid sm:grid-cols-2 mt-[100px] sm:mt-[226px] overflow-x-hidden">
+    <div>
+    <div className=" grid grid-cols-1 sm:grid-cols-2 mt-[100px] sm:mt-[226px] overflow-x-hidden">
       <div className="sm:ml-10 md:ml-40">
         <h1 className="text-Accent subtitle custom-font text-center sm:text-start text-5xl sm:text-6xl font-black leading-[76px] tracking-[1.4px] capitalize mb-[39px]">
           One of the biggest market makers
@@ -14,7 +26,7 @@ function Header() {
           they list on other centralized or decentralized exchanges.
         </p>
         <div class="flex justify-center items-center sm:items-start sm:justify-start">
-          <div className="transition duration-500 cursor-pointer mb-20 sm:mb-[319px] ease-in-out hover:bg-black hover:text-Accent2 active:bg-black active:text-Accent2 bg-Accent2 border-Accent2 w-[144px] h-[45px] mt-[20px] py-3 text-center rounded-md">
+          <div onClick={handleWalletClick} className="transition duration-500 cursor-pointer mb-20 sm:mb-[319px] ease-in-out hover:bg-black hover:text-Accent2 active:bg-black active:text-Accent2 bg-Accent2 border-Accent2 w-[144px] h-[45px] mt-[20px] py-3 text-center rounded-md">
             <h2 className="w-[143px] h-[28px] font-semibold">Connect wallet</h2>
           </div>
         </div>
@@ -29,6 +41,12 @@ function Header() {
           className="w-[350px] h-[350px] absolute outer-globe"
         />
       </div>
+    </div>
+    <Wallet
+          show={walletModal}
+          onClose={handleCloseWalletModal}
+          position="center-right"
+        />
     </div>
   );
 }

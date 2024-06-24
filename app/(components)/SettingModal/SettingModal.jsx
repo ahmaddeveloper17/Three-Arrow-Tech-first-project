@@ -11,14 +11,14 @@ function SettingModal({ show, onClose, position }) {
 
   let positionClass = "";
   if (position === "center-right") {
-    positionClass = "top-72  sm:right-72 transform -translate-y-1/2 mr-4";
+    positionClass = "top-80 sm:right-72 transform -translate-y-1/2 mr-4";
   }
 
   return (
     <div
       className={`fixed z-50 inset-0 flex items-center justify-end ${positionClass}`}
     >
-      <div className="bg-Accent  p-4 rounded-lg w-[400px]   mx-2  mt-4">
+      <div className="bg-Accent  p-4 rounded-lg w-[400px]   mx-2  mt-12">
         <div>
           <Image
             src={Images.close}

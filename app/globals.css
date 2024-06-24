@@ -8,10 +8,9 @@
   background-position: center;
 }
 .partner-div {
-  background-image: url('../public/assets/partnersBg.svg');
+  background-image: url('../public/assets/partnerBg.png');
   background-size: cover;
   background-position: center;
-  filter: brightness(80%);
 }
 
 .wallet-button:hover,

@@ -10,7 +10,7 @@ function Notification({ show, onClose, position }) {
 
   let positionClass = "";
   if (position === "center-right") {
-    positionClass = "top-52  sm:right-72 transform -translate-y-1/2 mr-4";
+    positionClass = "sm:top-60  top-64 sm:right-72 transform -translate-y-1/2 mr-4";
   }
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -47,7 +47,7 @@ function Notification({ show, onClose, position }) {
             <button
               onClick={toggleDropdown}
               id="dropdownDefaultButton"
-              className="text-white bg-[#404040] hover:bg-[#404040] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-44 px-12 py-2.5 text-center inline-flex items-center dark:bg-[#404040] dark:hover:bg-[#404040] dark:focus:ring-[#404040]"
+              className="text-white bg-[#404040] ml-1 hover:bg-[#404040] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-44 px-12 py-2.5 text-center inline-flex items-center dark:bg-[#404040] dark:hover:bg-[#404040] dark:focus:ring-[#404040]"
               type="button"
             >
               {selectedOption}{" "}
@@ -80,7 +80,7 @@ function Notification({ show, onClose, position }) {
                 <li>
                   <button
                     onClick={() => handleOptionSelect("ALL")}
-                    className={`block px-14 py-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ${
+                    className={`block px-14 py-2 w-full rounded-md text-left hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ${
                       selectedOption === "ALL"
                         ? "bg-gray-100 dark:bg-gray-600 dark:text-white"
                         : ""
